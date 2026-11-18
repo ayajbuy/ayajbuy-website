@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -184,7 +184,7 @@
           </div>
 
           <!-- Replace this with your actual business email -->
-          <a href="mailto:ayajbuy@gmail.com" class="button">
+          <!-- <a href="mailto:ayajbuy@gmail.com" class="button">
             Contact AyajBuy →
           </a>
         </div>
@@ -203,6 +203,396 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html> --> -->
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#A63B00" />
+    <meta
+      name="description"
+      content="AyajBuy makes online shopping simple. Discover everyday products and enjoy free delivery when your bag is full."
+    />
+    <title>AyajBuy | Shop Simply. Live More.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="wrap topbar">
+      <nav>
+          <a href="#top" class="brand">
+            <img src="assets/images/ayajbuy_logo.png" alt="AyajBuy logo" />
+          </a>
+          <div class="links">
+            <a href="#how-it-works">How it works</a>
+            <a href="#why">Why a bag</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="btn">Get in touch</a>
+          </div>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero-bg">
+      <div class="blob a"></div>
+      <div class="blob b"></div>
+
+      <div class="wrap">
+        
+
+        <header class="hero" id="top">
+          <div>
+            <h1>
+              <span class="rise">Pay for one thing.</span>
+              <span class="s rise" style="animation-delay: 0.15s">Ship when your bag is full.</span>
+            </h1>
+            <p class="lead rise" style="animation-delay: 0.35s">
+              Buy everyday products one at a time. Every item you pay for drops
+              into your bag, and the whole bag is delivered once it reaches the
+              threshold. Delivery is free.
+            </p>
+            <div class="cta rise" style="animation-delay: 0.5s">
+              <a class="btn solid" href="#how-it-works">See how it works</a>
+              <a class="text-link" href="#why">Why a bag?</a>
+            </div>
+          </div>
+
+          <div class="panel">
+          <div class="demo rise" style="animation-delay: 0.3s" aria-label="Interactive demo: fill a bag">
+            <div class="demo-top">
+              <b>Try it: fill your bag</b>
+              <small>Tap an item to pay for it</small>
+            </div>
+            <div class="shelf" id="shelf"></div>
+            <div class="stage" id="stage">
+              <div class="bagwrap" id="bagwrap">
+                <div class="handle"></div>
+                <div class="bag">
+                  <div class="fill" id="fill"></div>
+                  <div class="pile" id="pile"></div>
+                  <div class="tag">AyajBuy</div>
+                </div>
+              </div>
+              <div class="truck" aria-hidden="true">🚚</div>
+            </div>
+            <div class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="20000" aria-valuenow="0" id="meter">
+              <i id="bar"></i>
+            </div>
+            <div class="status" aria-live="polite">
+              <span id="msg">₦0 of ₦20,000. Your bag is empty.</span>
+              <button class="btn solid" id="send" hidden>Send my bag</button>
+              <button class="btn solid" id="again" hidden>Fill another bag</button>
+            </div>
+          </div>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <!-- SCROLLING BANNER -->
+    <div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+    <main class="wrap">
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works" style="padding-top: 40px">
+        <h2>From “I need that” to your door.</h2>
+        <p class="sub">You pay as you go. The bag does the waiting.</p>
+        <div class="steps" id="steps">
+          <div class="step" style="--i: 0">
+            <div class="ic">🔍</div>
+            <h3>Find what you need</h3>
+            <p>Explore everyday products available on AyajBuy.</p>
+          </div>
+          <div class="step" style="--i: 1">
+            <div class="ic">💳</div>
+            <h3>Pay for the item</h3>
+            <p>Select an item and check out securely in the app.</p>
+          </div>
+          <div class="step" style="--i: 2">
+            <div class="ic">🛍️</div>
+            <h3>Fill your bag</h3>
+            <p>Every item you’ve paid for goes into your bag.</p>
+          </div>
+          <div class="step" style="--i: 3">
+            <div class="ic">🚚</div>
+            <h3>Get your delivery</h3>
+            <p>When the bag reaches the threshold, it ships to your chosen location, free of charge.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY A BAG -->
+      <section id="why" style="padding-top: 20px">
+        <div class="why">
+          <div class="why-grid">
+            <div>
+              <h2>Buy without paying for delivery.</h2>
+              <p class="sub">
+                The bag is how delivery becomes free. Your paid items collect in
+                one bag, and when it reaches the threshold it ships to you with
+                no delivery or shipping fee.
+              </p>
+              <div class="ring" id="ring">
+                <svg viewBox="0 0 200 200">
+                  <circle class="t" cx="100" cy="100" r="90" />
+                  <circle class="f" id="rf" cx="100" cy="100" r="90" />
+                </svg>
+                <div>
+                  <b id="rn">₦0</b>
+                  <small id="rt">of ₦20,000 threshold</small>
+                </div>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="row"><b>Free delivery</b><span>You only pay for the items you buy. There’s no delivery or shipping fee on your bag.</span></div>
+              <div class="row"><b>Pay per item</b><span>Every purchase is its own payment. Add one thing now and more whenever you like.</span></div>
+              <div class="row"><b>One bag</b><span>Everything you buy collects in the same bag, so you always see what’s coming.</span></div>
+              <div class="row"><b>One delivery</b><span>When your bag reaches the threshold, it’s sent to you in one go.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" style="padding-top: 20px">
+        <h2>Quick answers.</h2>
+        <div class="faq">
+          <details><summary>Do I pay for delivery?</summary><p>No. Delivery is free. You only pay for the items you buy.</p></details>
+          <details><summary>Do I pay for everything at once?</summary><p>No. You pay for each item when you buy it. Paid items go into your bag.</p></details>
+          <details><summary>What is the threshold?</summary><p>It’s the amount your bag needs to reach before it ships. You can see where your bag stands in the app.</p></details>
+          <details><summary>Where is my bag delivered?</summary><p>To the location you choose.</p></details>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" style="padding-top: 20px">
+        <div class="contact">
+          <div class="blob a"></div>
+          <div>
+            <h2>Questions about AyajBuy?</h2>
+            <p>Get in touch with our team for support or business enquiries.</p>
+          </div>
+          <div class="reach">
+            <a class="btn" href="mailto:ayajbuy@gmail.com">Email AyajBuy</a>
+            <a class="mail" href="mailto:ayajbuy@gmail.com">ayajbuy@gmail.com</a>
+            <a class="mail" href="tel:+2348101268092">+234 810 126 8092</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      <a href="#top" class="brand">
+        <img src="assets/images/ayajbuy_logo.png" alt="AyajBuy logo" />
+      </a>
+      <span>© <span id="year"></span> AyajBuy. All rights reserved.</span>
+      <span>Online shopping made convenient.</span>
+    </footer>
+
+    <script>
+// ---- Settings: change these to your real values ----
+const THRESHOLD = 20000; // bag threshold in naira
+const items = [
+  { e: "💡", n: "Desk lamp", p: 4000 },
+  { e: "📱", n: "Phone case", p: 2000 },
+  { e: "👜", n: "Tote bag", p: 3000 },
+  { e: "☕", n: "Kettle", p: 6000 },
+  { e: "🧦", n: "Socks", p: 1500 },
+  { e: "🎧", n: "Headphones", p: 7000 },
+];
+// -----------------------------------------------------
+
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => "₦" + n.toLocaleString("en-NG");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let total = 0;
+let shipping = false;
+let isFull = false;
+
+// Footer year
+if ($("year")) $("year").textContent = new Date().getFullYear();
+
+// ---- Fill-the-bag demo ----
+items.forEach((it) => {
+  const b = document.createElement("button");
+  b.className = "item";
+  b.type = "button";
+  b.innerHTML = `<span class="e">${it.e}</span><span class="n">${it.n}</span><span class="p">${fmt(it.p)}</span>`;
+  b.onclick = () => buy(it, b);
+  $("shelf").appendChild(b);
+});
+
+function update() {
+  const pct = Math.min(100, (total / THRESHOLD) * 100);
+  $("bar").style.width = pct + "%";
+  $("fill").style.height = pct + "%";
+  $("meter").setAttribute("aria-valuenow", total);
+  $("msg").textContent =
+    total === 0
+      ? `${fmt(0)} of ${fmt(THRESHOLD)}. Your bag is empty.`
+      : `${fmt(total)} of ${fmt(THRESHOLD)}. ${fmt(Math.max(0, THRESHOLD - total))} to go.`;
+}
+
+function buy(it, btn) {
+  if (shipping || isFull) return;
+  btn.disabled = true;
+  total += it.p;
+  const s = document.createElement("span");
+  s.textContent = it.e;
+  $("pile").appendChild(s);
+  const w = $("bagwrap");
+  w.classList.remove("pop");
+  void w.offsetWidth;
+  setTimeout(() => w.classList.add("pop"), 500);
+  update();
+  if (total >= THRESHOLD) full();
+}
+
+// Bag reached the threshold: wait for the customer to send it
+function full() {
+  isFull = true;
+  document.querySelectorAll(".item:not(:disabled)").forEach((b) => b.classList.add("off"));
+  $("msg").textContent = "Your bag is full! Send it for delivery.";
+  $("send").hidden = false;
+  setTimeout(() => {
+    $("bagwrap").classList.remove("pop");
+    $("bagwrap").classList.add("ready");
+  }, 900);
+}
+
+// Customer taps "Send my bag": the bag leaves on the truck
+$("send").onclick = () => {
+  shipping = true;
+  $("send").hidden = true;
+  $("bagwrap").classList.remove("ready");
+  $("msg").textContent = "Your bag is on its way!";
+  $("stage").classList.add("go");
+  setTimeout(() => {
+    $("pile").innerHTML = "";
+    $("fill").style.height = "0";
+    $("msg").textContent = "Your bag is on its way to you. Delivery is free.";
+    $("again").hidden = false;
+  }, reduce ? 400 : 3300);
+};
+
+$("again").onclick = () => {
+  total = 0;
+  shipping = false;
+  isFull = false;
+  $("stage").classList.remove("go");
+  $("bagwrap").classList.remove("ready");
+  document.querySelectorAll(".item").forEach((b) => {
+    b.disabled = false;
+    b.classList.remove("off");
+  });
+  $("again").hidden = true;
+  update();
+};
+
+// ---- Scrolling banner ----
+const words = ["Pay per item", "Fill your bag", "Free delivery", "Delivered to you"];
+$("track").innerHTML = [...words, ...words, ...words, ...words]
+  .map((w) => `<span>${w}</span>`)
+  .join("");
+
+// ---- Steps line draws on scroll ----
+try {
+  new IntersectionObserver(
+    (en, ob) => {
+      if (en[0].isIntersecting) {
+        $("steps").classList.add("in");
+        ob.disconnect();
+      }
+    },
+    { threshold: 0.4 }
+  ).observe($("steps"));
+} catch (e) {
+  $("steps").classList.add("in");
+}
+
+// ---- Looping ring ----
+function ringLoop() {
+  const rf = $("rf"), rn = $("rn"), rt = $("rt");
+  if (reduce) {
+    rf.style.strokeDashoffset = 0;
+    rn.textContent = fmt(THRESHOLD);
+    rt.textContent = "ships now";
+    return;
+  }
+  let t0 = null;
+  const D = 3200, H = 1800;
+  function frame(t) {
+    if (!t0) t0 = t;
+    const k = (t - t0) % (D + H);
+    const p = Math.min(1, k / D);
+    const e = 1 - Math.pow(1 - p, 2);
+    rf.style.strokeDashoffset = 565.5 * (1 - e);
+    rn.textContent = fmt(Math.round((THRESHOLD * e) / 100) * 100);
+    rt.textContent = p >= 1 ? "ships now" : "of " + fmt(THRESHOLD) + " threshold";
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+try {
+  new IntersectionObserver(
+    (en, ob) => {
+      if (en[0].isIntersecting) {
+        ringLoop();
+        ob.disconnect();
+      }
+    },
+    { threshold: 0.3 }
+  ).observe($("ring"));
+} catch (e) {
+  ringLoop();
+}
+
+// ---- Trim empty space around the logo image so it displays big ----
+function trimLogo(img) {
+  const run = () => {
+    try {
+      const W = img.naturalWidth, H = img.naturalHeight;
+      const c = document.createElement("canvas");
+      c.width = W; c.height = H;
+      const x = c.getContext("2d");
+      x.drawImage(img, 0, 0);
+      const d = x.getImageData(0, 0, W, H).data;
+      const clear = d[3] < 10;
+      let x0 = W, y0 = H, x1 = 0, y1 = 0;
+      for (let y = 0; y < H; y++) {
+        for (let i = 0; i < W; i++) {
+          const p = (y * W + i) * 4;
+          const hit = clear
+            ? d[p + 3] > 20
+            : d[p + 3] > 20 && Math.abs(d[p] - d[0]) + Math.abs(d[p + 1] - d[1]) + Math.abs(d[p + 2] - d[2]) > 40;
+          if (hit) { if (i < x0) x0 = i; if (i > x1) x1 = i; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        }
+      }
+      if (x1 <= x0 || y1 <= y0) return;
+      const o = document.createElement("canvas");
+      o.width = x1 - x0 + 1; o.height = y1 - y0 + 1;
+      o.getContext("2d").drawImage(c, x0, y0, o.width, o.height, 0, 0, o.width, o.height);
+      img.src = o.toDataURL("image/png");
+    } catch (e) { /* keep original image if the browser blocks canvas (e.g. opened as a local file) */ }
+  };
+  if (img.complete && img.naturalWidth) run();
+  else img.addEventListener("load", run, { once: true });
+}
+document.querySelectorAll(".brand img").forEach(trimLogo);
     </script>
   </body>
 </html>
