@@ -45,7 +45,7 @@ a { color: inherit; text-decoration: none; }
 
 /* LOGO: big, no container */
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
-.brand img { display: block; height: 80px; width: auto; max-width: 100%; }
+.brand img { display: block; height: 20px; width: auto; max-width: 100%; }
 
 /* HERO */
 .hero-bg {
@@ -276,7 +276,7 @@ footer {
   display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
   gap: 16px; padding: 48px 24px 40px; color: var(--muted); font-size: 0.95rem;
 }
-footer .brand img { height: 72px; }
+footer .brand img { height: 25px; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
